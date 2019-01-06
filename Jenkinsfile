@@ -18,7 +18,7 @@ node {
   
   stage('deploy') {
     def resourceGroup = '<myResourceGroup>' 
-    def webAppName = '<app_name>'
+    def webAppName = '<myAppName>'
     // login Azure
     withCredentials([azureServicePrincipal('<mySrvPrincipal>')]) {
       sh '''
